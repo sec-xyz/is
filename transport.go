@@ -34,7 +34,7 @@ func MakeHTTPHandler(e Endpoints, logger log.Logger) http.Handler {
 
 	// GET		/hotels/:hotelID/bookings 		retrieves a list of bookings
 	// POST		/hotels/:hotelID/bookings 		adds another booking
-	// GET		/hotels/:hotelID/bookings/:ID 	adds another booking
+	// GET		/hotels/:hotelID/bookings/:ID 		adds another booking
 
 	r.Methods("GET").Path("/hotels/{org_id}/bookings").Handler(httptransport.NewServer(
 		e.ListBookings,
