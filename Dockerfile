@@ -1,4 +1,4 @@
-FROM golang:rc-stretch
+FROM golang:bullseye
 
 COPY ./ /src
 WORKDIR /src
@@ -6,4 +6,4 @@ RUN go install github.com/form3tech/innsecure/cmd/innsecure
 
 EXPOSE 8080
 
-ENTRYPOINT innsecure
+ENTRYPOINT ["innsecure"]
