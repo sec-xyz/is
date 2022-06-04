@@ -1,5 +1,5 @@
 # IMAGE: docker.io/golang:1-bullseye  - jun2, 2022
-FROM docker.io/golang:bullseye@sha256:5417b4917fa7ed3ad2678a3ce6378a00c95bfd430c2ffa39936fce55130b5f2c
+FROM docker.io/golang:bullseye@sha256:db42e4bb1a7f32da1ec430906769dbbabe9f1868bd4170751e4923f1b8948a45
 
 COPY ./ /src
 WORKDIR /src
