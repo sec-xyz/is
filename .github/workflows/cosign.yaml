@@ -19,3 +19,5 @@ jobs:
         with:
           cosign-release: 'v1.2.1' # optional
 
+# https://ttl.sh/
+# Anonymous & ephemeral Docker image registry
