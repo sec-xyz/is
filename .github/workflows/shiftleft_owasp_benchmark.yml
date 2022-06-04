@@ -90,7 +90,7 @@ jobs:
       if: github.event_name == 'pull_request'
 
     - name: Notify Benchmark Results
-      uses: actions/github-script@v4
+      uses: actions/github-script@v6
       if: github.event_name == 'pull_request'
       env:
         OWASP_BENCHMARK_CHECKSUM: ${{ env.OWASP_BENCHMARK_CHECKSUM }}
