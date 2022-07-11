@@ -83,7 +83,7 @@ jobs:
           tr -d " -")
         echo "OWASP_BENCHMARK_CHECKSUM=$OWASP_BENCHMARK_CHECKSUM" >> $GITHUB_ENV
 
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v3.4.0
       with:
         node-version: 14
     - run: npm install jwt-decode node-fetch@2
